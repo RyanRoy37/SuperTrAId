@@ -115,48 +115,62 @@
   <p>🚀 <b>SuperTraid</b> | Developed by a passionate team of engineers blending AI and Finance.</p>
 </div>
 
-<h2 align="center">👩‍💻 Team SuperTraid</h2>
-
 <p align="center">
   <i>Meet the developers behind SuperTraid — a fusion of data, AI, and a little bit of comic energy 💥</i>
 </p>
 
-<div align="center">
+<!-- TEAM GRID -->
+<div align="center" style="display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start;">
 
   <!-- Kajal -->
-  <a href="https://github.com/Kajallchauhan" target="_blank" style="margin: 20px;">
-    <img src="assets/Shinobu.webp" 
-         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Kajal Vivek Singh Chauhan"/><br>
-    <sub><b>Kajal Vivek Singh Chauhan</b></sub><br>
-    <sub>💻 <i>@Kajallchauhan</i></sub>
-  </a>
+  <div style="margin: 30px; text-align: center;">
+    <h3 style="margin-bottom: 5px;">Kajal Vivek Singh Chauhan</h3>
+    <a href="https://github.com/Kajallchauhan" target="_blank">
+      <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">💻 @Kajallchauhan</p>
+      <img src="assets/Shinobu.webp" 
+           width="180" height="180" 
+           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
+           alt="Kajal Vivek Singh Chauhan"/>
+    </a>
+  </div>
 
   <!-- Jeevan -->
-  <a href="https://github.com/JeevanC37" target="_blank" style="margin: 20px;">
-    <img src="assets/bob.jpg" 
-         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Jeevan C"/><br>
-    <sub><b>Jeevan C</b></sub><br>
-    <sub>🧱 <i>@JeevanC37</i></sub>
-  </a>
+  <div style="margin: 30px; text-align: center;">
+    <h3 style="margin-bottom: 5px;">Jeevan C</h3>
+    <a href="https://github.com/JeevanC37" target="_blank">
+      <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">🧱 @JeevanC37</p>
+      <img src="assets/bob.jpg" 
+           width="180" height="180" 
+           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
+           alt="Jeevan C"/>
+    </a>
+  </div>
 
   <!-- Jatin -->
-  <a href="https://github.com/JatinS0241" target="_blank" style="margin: 20px;">
-    <img src="assets/hulk.jpg" 
-         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Jatin Saraogi"/><br>
-    <sub><b>Jatin Saraogi</b></sub><br>
-    <sub>💪 <i>@JatinS0241</i></sub>
-  </a>
+  <div style="margin: 30px; text-align: center;">
+    <h3 style="margin-bottom: 5px;">Jatin Saraogi</h3>
+    <a href="https://github.com/JatinS0241" target="_blank">
+      <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">💪 @JatinS0241</p>
+      <img src="assets/hulk.jpg" 
+           width="180" height="180" 
+           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
+           alt="Jatin Saraogi"/>
+    </a>
+  </div>
 
   <!-- Ryan -->
-  <a href="https://github.com/RyanRoy37" target="_blank" style="margin: 20px;">
-    <img src="assets/Minion.webp" 
-         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Ryan Roy"/><br>
-    <sub><b>Ryan Roy</b></sub><br>
-    <sub>⚡ <i>@RyanRoy37</i></sub>
-  </a>
+  <div style="margin: 30px; text-align: center;">
+    <h3 style="margin-bottom: 5px;">Ryan Roy</h3>
+    <a href="https://github.com/RyanRoy37" target="_blank">
+      <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">⚡ @RyanRoy37</p>
+      <img src="assets/Minion.webp" 
+           width="180" height="180" 
+           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
+           alt="Ryan Roy"/>
+    </a>
+  </div>
 
 </div>
 
 <br>
 <hr style="width:80%;border:1px solid #ddd;">
-
