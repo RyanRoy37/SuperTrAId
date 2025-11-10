@@ -10,7 +10,7 @@
     Combining <b>Machine Learning</b> and <b>Statistical Arbitrage</b> for intelligent trading decisions.
   </p>
 
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fstocks-gifs&psig=AOvVaw1ADU6hoofJ_0KS2rfBmLJ-&ust=1762882825736000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiIwLaQ6JADFQAAAAAdAAAAABAE" width="600px" alt="Dashboard Preview"/>
+  <img src="assets/stonks-up-stongs.gif" width="600px" alt="Dashboard Preview"/>
   
   <hr style="width:80%;border:1px solid #ddd;">
 
@@ -38,7 +38,7 @@
 </p>
 
 <div align="center">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fraufhezam.com%2F&psig=AOvVaw2DK6V0t25J5-ymgWjsyVXr&ust=1762882936182000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJDxzfWQ6JADFQAAAAAdAAAAABAV" width="700" alt="Architecture Diagram"/>
+  <img src="assets/dashboard.webp" width="700" alt="Architecture Diagram"/>
 </div>
 
 <p align="justify">
@@ -125,7 +125,7 @@
 
   <!-- Kajal -->
   <a href="https://github.com/Kajallchauhan" target="_blank" style="margin: 20px;">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Shinobu_Kocho_Anime.png/220px-Shinobu_Kocho_Anime.png" 
+    <img src="assets/Shinobu.webp" 
          width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Kajal Vivek Singh Chauhan"/><br>
     <sub><b>Kajal Vivek Singh Chauhan</b></sub><br>
     <sub>💻 <i>@Kajallchauhan</i></sub>
@@ -133,7 +133,7 @@
 
   <!-- Jeevan -->
   <a href="https://github.com/JeevanC37" target="_blank" style="margin: 20px;">
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Bob_the_Builder_character.png" 
+    <img src="assets/bob.jpg" 
          width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Jeevan C"/><br>
     <sub><b>Jeevan C</b></sub><br>
     <sub>🧱 <i>@JeevanC37</i></sub>
@@ -141,7 +141,7 @@
 
   <!-- Jatin -->
   <a href="https://github.com/JatinS0241" target="_blank" style="margin: 20px;">
-    <img src="https://i.pinimg.com/736x/0d/5f/25/0d5f25cf2b4b2f3b8a348176b9359938.jpg" 
+    <img src="assets/hulk.jpg" 
          width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Jatin Saraogi"/><br>
     <sub><b>Jatin Saraogi</b></sub><br>
     <sub>💪 <i>@JatinS0241</i></sub>
@@ -149,7 +149,7 @@
 
   <!-- Ryan -->
   <a href="https://github.com/RyanRoy37" target="_blank" style="margin: 20px;">
-    <img src="https://i.pinimg.com/564x/6d/59/fc/6d59fc45700e5f95157caa4ebc49dc1e.jpg" 
+    <img src="assets/Minion.webp" 
          width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Ryan Roy"/><br>
     <sub><b>Ryan Roy</b></sub><br>
     <sub>⚡ <i>@RyanRoy37</i></sub>
