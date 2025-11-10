@@ -110,13 +110,8 @@
 
 <br><br>
 
-<div align="center">
-  <hr style="width:60%;border:1px solid #bbb;">
-  <p>🚀 <b>SuperTraid</b> | Developed by a passionate team of engineers blending AI and Finance.</p>
-</div>
-
 <p align="center">
-  <i>Meet the developers behind SuperTraid — a fusion of data, AI, and a little bit of comic energy 💥</i>
+  <i>Meet the developers behind SuperTraid.</i>
 </p>
 
 <!-- TEAM GRID -->
