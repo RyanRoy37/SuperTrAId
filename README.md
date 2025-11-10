@@ -2,7 +2,7 @@
 
   <img src="assets/SuperTrAId LOGO.png" alt="SuperTraid Logo" width="180"/>
   
-  <h1>💹 SuperTraid</h1>
+  <h1>SuperTraid</h1>
   <h3>AI-Driven Algorithmic Trading and Statistical Arbitrage Platform</h3>
 
   <p>
@@ -10,7 +10,7 @@
     Combining <b>Machine Learning</b> and <b>Statistical Arbitrage</b> for intelligent trading decisions.
   </p>
 
-  <img src="https://cdn.dribbble.com/users/2370283/screenshots/5981446/finance-dashboard.gif" width="600px" alt="Dashboard Preview"/>
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fstocks-gifs&psig=AOvVaw1ADU6hoofJ_0KS2rfBmLJ-&ust=1762882825736000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiIwLaQ6JADFQAAAAAdAAAAABAE" width="600px" alt="Dashboard Preview"/>
   
   <hr style="width:80%;border:1px solid #ddd;">
 
@@ -18,7 +18,7 @@
 
 <br>
 
-<h2>📌 Introduction</h2>
+<h2>Introduction</h2>
 
 <p align="justify">
   Financial markets generate massive amounts of data every second, making it increasingly difficult for traders to identify profitable opportunities manually.
@@ -38,7 +38,7 @@
 </p>
 
 <div align="center">
-  <img src="https://i.imgur.com/guQftcJ.png" width="700" alt="Architecture Diagram"/>
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fraufhezam.com%2F&psig=AOvVaw2DK6V0t25J5-ymgWjsyVXr&ust=1762882936182000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJDxzfWQ6JADFQAAAAAdAAAAABAV" width="700" alt="Architecture Diagram"/>
 </div>
 
 <p align="justify">
@@ -113,5 +113,50 @@
 <div align="center">
   <hr style="width:60%;border:1px solid #bbb;">
   <p>🚀 <b>SuperTraid</b> | Developed by a passionate team of engineers blending AI and Finance.</p>
-  <img src="https://i.imgur.com/DYFtjFf.png" width="400" alt="Team Banner"/>
 </div>
+
+<h2 align="center">👩‍💻 Team SuperTraid</h2>
+
+<p align="center">
+  <i>Meet the developers behind SuperTraid — a fusion of data, AI, and a little bit of comic energy 💥</i>
+</p>
+
+<div align="center">
+
+  <!-- Kajal -->
+  <a href="https://github.com/Kajallchauhan" target="_blank" style="margin: 20px;">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Shinobu_Kocho_Anime.png/220px-Shinobu_Kocho_Anime.png" 
+         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Kajal Vivek Singh Chauhan"/><br>
+    <sub><b>Kajal Vivek Singh Chauhan</b></sub><br>
+    <sub>💻 <i>@Kajallchauhan</i></sub>
+  </a>
+
+  <!-- Jeevan -->
+  <a href="https://github.com/JeevanC37" target="_blank" style="margin: 20px;">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Bob_the_Builder_character.png" 
+         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Jeevan C"/><br>
+    <sub><b>Jeevan C</b></sub><br>
+    <sub>🧱 <i>@JeevanC37</i></sub>
+  </a>
+
+  <!-- Jatin -->
+  <a href="https://github.com/JatinS0241" target="_blank" style="margin: 20px;">
+    <img src="https://i.pinimg.com/736x/0d/5f/25/0d5f25cf2b4b2f3b8a348176b9359938.jpg" 
+         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Jatin Saraogi"/><br>
+    <sub><b>Jatin Saraogi</b></sub><br>
+    <sub>💪 <i>@JatinS0241</i></sub>
+  </a>
+
+  <!-- Ryan -->
+  <a href="https://github.com/RyanRoy37" target="_blank" style="margin: 20px;">
+    <img src="https://i.pinimg.com/564x/6d/59/fc/6d59fc45700e5f95157caa4ebc49dc1e.jpg" 
+         width="120" height="120" style="border-radius:50%; margin:10px; border:2px solid #ccc;" alt="Ryan Roy"/><br>
+    <sub><b>Ryan Roy</b></sub><br>
+    <sub>⚡ <i>@RyanRoy37</i></sub>
+  </a>
+
+</div>
+
+<br>
+<hr style="width:80%;border:1px solid #ddd;">
+
