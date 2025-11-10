@@ -2,7 +2,7 @@
 
   <img src="assets/SuperTrAId LOGO.png" alt="SuperTraid Logo" width="180"/>
   
-  <h1>SuperTraid</h1>
+  <h1>SuperTrAId</h1>
   <h3>AI-Driven Algorithmic Trading and Statistical Arbitrage Platform</h3>
 
   <p>
