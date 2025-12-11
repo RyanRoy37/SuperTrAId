@@ -69,6 +69,20 @@ SELECT
     NULLIF(security_code, '-')::NUMERIC AS security_code
 FROM stocks_raw;
 
+CREATE TABLE historical_prices (
+    stock_id INT REFERENCES stocks(id),
+    date DATE NOT NULL,
+    open NUMERIC(12,4),
+    high NUMERIC(12,4),
+    low NUMERIC(12,4),
+    close NUMERIC(12,4),
+    volume BIGINT,
+    PRIMARY KEY (stock_id, date)
+);
+
+CREATE INDEX id_hist_date on historical_prices(stock_id, date);
+
+
 -- STEP 5: Indexes
 CREATE INDEX idx_stocks_symbol ON stocks(symbol);
 CREATE INDEX idx_stocks_exchange ON stocks(exchange);
