@@ -1,4 +1,36 @@
-require("dotenv").config({path: "C:/Users/jryan/Documents/Env/postgres.env.txt" });
+require('dotenv').config();
+const express = require('express');
+const app = express();
+
+const authRoutes = require('./routes/authRoutes');
+const authMiddleware = require('./middleware/authMiddleware');
+
+
+app.use(express.json());
+
+app.use('/auth', authRoutes);
+
+app.use(authMiddleware);
+
+
+//app.use('/portfolio', require('./routes/portfolioRoutes'));
+//app.use('/stocks', require('./routes/stocksRoutes'));
+//app.use('/superbundles', require('./routes/superbundleRoutes'));
+const profileRoutes = require('./routes/profileRoutes');
+
+app.use(profileRoutes);
+
+
+
+app.listen(process.env.PORT, () => {
+  console.log(`Server running on port ${process.env.PORT}`);
+});
+
+
+
+
+
+/*require("dotenv").config({path: "C:/Users/jryan/Documents/Env/postgres.env.txt" });
 const express = require("express");
 const { Pool } = require("pg");
 const app = express();
@@ -86,4 +118,4 @@ app.get("/stocks/:id/history/monthly", async (req, res) => {});
 app.get("/stocks/:id/history/yearly", async (req, res) => {});
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));*/
