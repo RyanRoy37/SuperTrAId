@@ -173,8 +173,39 @@ const getTransactions = async (req, res) => {
   }
 };
 
+const getAlerts = async (req, res) => {
+  try {
+    const userId = req.user_id;
+
+    const query = `
+      SELECT
+        a.id,
+        a.type,
+        a.stock_id,
+        s.symbol,
+        a.bundle_id,
+        a.message,
+        a.created_at
+      FROM activity_log a
+      LEFT JOIN stocks s
+        ON s.id = a.stock_id
+      WHERE a.user_id = $1
+        AND a.type = 'alert'
+      ORDER BY a.created_at DESC;
+    `;
+
+    const { rows } = await pool.query(query, [userId]);
+
+    res.json(rows);
+
+  } catch (err) {
+    console.error('Alerts error:', err);
+    res.status(500).json({ error: 'Failed to fetch alerts' });
+  }
+};
+
 
 module.exports = { getPortfolioSummary,
     getPortfolioHoldings,getWishlist,
-    getTransactions
+    getTransactions, getAlerts
  };
