@@ -37,5 +37,44 @@ const getPortfolioSummary = async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch portfolio summary' });
   }
 };
+const getPortfolioHoldings = async (req, res) => {
+  try {
+    const userId = req.user_id; 
 
-module.exports = { getPortfolioSummary };
+    const query = `
+      SELECT
+        h.stock_id,
+        s.symbol,
+        h.quantity,
+        h.avg_price,
+        hp.close AS current_price,
+        (hp.close - h.avg_price) * h.quantity AS pnl
+      FROM holdings h
+      JOIN stocks s
+        ON s.id = h.stock_id
+      JOIN LATERAL (
+        SELECT close
+        FROM historical_prices
+        WHERE stock_id = h.stock_id
+        ORDER BY date DESC
+        LIMIT 1
+      ) hp ON true
+      WHERE h.user_id = $1
+      ORDER BY s.symbol;
+    `;
+
+    const { rows } = await pool.query(query, [userId]);
+
+    res.json(rows);
+
+  } catch (err) {
+    console.error('Portfolio holdings error:', err);
+    res.status(500).json({ error: 'Failed to fetch portfolio holdings' });
+  }
+};
+
+
+
+module.exports = { getPortfolioSummary,
+    getPortfolioHoldings
+ };
