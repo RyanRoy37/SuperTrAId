@@ -17,9 +17,10 @@ app.use(authMiddleware);
 //app.use('/stocks', require('./routes/stocksRoutes'));
 //app.use('/superbundles', require('./routes/superbundleRoutes'));
 const profileRoutes = require('./routes/profileRoutes');
-
 app.use(profileRoutes);
 
+const portfolioRoutes = require('./routes/portfolioRoutes');
+app.use('/portfolio', portfolioRoutes);
 
 
 app.listen(process.env.PORT, () => {
