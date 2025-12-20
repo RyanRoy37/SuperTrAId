@@ -73,8 +73,32 @@ const getPortfolioHoldings = async (req, res) => {
   }
 };
 
+const getWishlist = async (req, res) => {
+  try {
+    const userId = req.user_id; 
+
+    const query = `
+      SELECT
+        w.stock_id,
+        s.symbol
+      FROM wishlist w
+      JOIN stocks s
+        ON s.id = w.stock_id
+      WHERE w.user_id = $1
+      ORDER BY s.symbol;
+    `;
+
+    const { rows } = await pool.query(query, [userId]);
+
+    res.json(rows);
+
+  } catch (err) {
+    console.error('Wishlist error:', err);
+    res.status(500).json({ error: 'Failed to fetch wishlist' });
+  }
+};
 
 
 module.exports = { getPortfolioSummary,
-    getPortfolioHoldings
+    getPortfolioHoldings,getWishlist
  };
