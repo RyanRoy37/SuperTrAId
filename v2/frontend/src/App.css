@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap');
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: 'VT323', monospace;
+  background: #0a0e27;
+  color: #00ff00;
+  overflow-x: hidden;
+}
+
+/* ===== APP LAYOUT ===== */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* ===== CRT SCANLINES ===== */
+.scanlines {
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  flex: 1;
+  margin-left: 250px; /* matches old SideNavbar width */
+  padding: 20px;
+  min-height: 100vh;
+  background: #0a0e27;
+}
+
+/* ===== PIXEL BORDER ===== */
+.pixel-border {
+  border: 3px solid #00ff00;
+  border-image: repeating-linear-gradient(
+    45deg,
+    #00ff00,
+    #00ff00 2px,
+    transparent 2px,
+    transparent 4px
+  ) 10;
+  box-shadow:
+    0 0 10px rgba(0, 255, 0, 0.3),
+    inset 0 0 10px rgba(0, 255, 0, 0.1);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: #00ff00;
+  color: #0a0e27;
+  border: 2px solid #00ff00;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #00cccc;
+  border: 2px solid #00cccc;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.btn-secondary:hover {
+  background: #00cccc;
+  color: #0a0e27;
+  box-shadow: 0 0 15px rgba(0, 204, 204, 0.6);
+}
+
+.btn-danger {
+  background: transparent;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.btn-danger:hover {
+  background: #ff0000;
+  color: #0a0e27;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* ===== STATUS COLORS ===== */
+.positive {
+  color: #00ff00 !important;
+}
+
+.negative {
+  color: #ff0000 !important;
+}
+
+/* ===== TERMINAL HEADER ===== */
+.terminal-header {
+  background: #0d1117;
+  padding: 10px 15px;
+  border-bottom: 2px solid #00ff00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terminal-title {
+  font-size: 20px;
+  color: #00ff00;
+}
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+  font-size: 24px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* ===== AUTH PAGES ===== */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0e27;
+}
+
+.auth-card {
+  width: 360px;
+  padding: 30px;
+  background: #0d1117;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+}
+
+/* ===== FORMS ===== */
+input,
+select {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #00cccc;
+  color: #00ff00;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-family: 'VT323', monospace;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #00ff00;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #00cccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ff00;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 12px;
+  }
+}

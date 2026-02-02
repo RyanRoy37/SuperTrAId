@@ -25,6 +25,13 @@ app.use('/portfolio', portfolioRoutes);
 const superbundleRoutes = require('./routes/superbundleRoutes');
 app.use(superbundleRoutes);
 
+const stocksRoutes = require("./routes/stocksRoutes");
+app.use("/stocks", stocksRoutes);
+
+const historyRoutes = require("./routes/historyRoutes");
+app.use("/", historyRoutes);
+
+
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });

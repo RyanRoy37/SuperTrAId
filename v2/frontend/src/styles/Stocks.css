@@ -1,0 +1,412 @@
+
+.stocks-container {
+  padding: 20px;
+}
+
+.stocks-header {
+  margin-bottom: 30px;
+}
+
+.stocks-subtitle {
+  font-size: 20px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-left: 47px;
+}
+
+.stocks-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+.stocks-sidebar {
+  background: rgba(10, 14, 39, 0.95);
+  border: 3px solid #00ff00;
+  border-radius: 8px;
+  padding: 20px;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  position: sticky;
+  top: 20px;
+}
+
+.stocks-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stock-header-card {
+  background: rgba(10, 14, 39, 0.95);
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock-header-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stock-header-logo {
+  font-size: 64px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.stock-header-name {
+  font-size: 32px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.stock-header-symbol {
+  font-size: 20px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-top: 5px;
+}
+
+.stock-header-price {
+  text-align: right;
+}
+
+.stock-price-value {
+  font-size: 48px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+}
+
+.stock-price-change {
+  font-size: 24px;
+  font-family: 'VT323', monospace;
+  margin-top: 5px;
+}
+
+.chart-section {
+  background: rgba(10, 14, 39, 0.95);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chart-controls {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .stocks-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stocks-sidebar {
+    max-height: 400px;
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .stock-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stock-header-info {
+    flex-direction: column;
+  }
+
+  .stock-header-price {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .stock-price-value {
+    font-size: 36px;
+  }
+}
+
+/* Stock List Styles */
+.stock-list-header {
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.stock-list-header h3 {
+  font-size: 20px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.stock-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stock-list-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 255, 0, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.stock-list-item:hover {
+  border-color: #00ff00;
+  background: rgba(0, 255, 0, 0.05);
+  transform: translateX(5px);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.stock-list-item.selected {
+  border-color: #00ff00;
+  background: rgba(0, 255, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+
+.stock-list-logo {
+  font-size: 32px;
+  min-width: 40px;
+}
+
+.stock-list-info {
+  flex: 1;
+}
+
+.stock-list-name {
+  font-size: 16px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+}
+
+.stock-list-symbol {
+  font-size: 14px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-top: 2px;
+}
+
+.stock-list-price-info {
+  text-align: right;
+}
+
+.stock-list-price {
+  font-size: 18px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+}
+
+.stock-list-change {
+  font-size: 14px;
+  font-family: 'VT323', monospace;
+  margin-top: 2px;
+}
+
+/* Chart Styles */
+.stock-chart-container {
+  height: 400px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.chart-loading {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+}
+
+.loading-spinner {
+  font-size: 48px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Timeframe Selector */
+.timeframe-selector-stocks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.timeframe-label {
+  font-size: 18px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+.timeframe-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.timeframe-btn-stock {
+  background: transparent;
+  border: 2px solid #00cccc;
+  color: #00cccc;
+  padding: 8px 16px;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.timeframe-btn-stock:hover {
+  border-color: #00ff00;
+  color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.timeframe-btn-stock.active {
+  background: #00ff00;
+  color: #0a0e27;
+  border-color: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+}
+
+/* Buy/Sell Panel */
+.buy-sell-panel {
+  background: rgba(10, 14, 39, 0.95);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.panel-header {
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.panel-header h3 {
+  font-size: 24px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trade-stock-display {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(0, 255, 0, 0.05);
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+}
+
+.trade-display-logo {
+  font-size: 48px;
+}
+
+.trade-display-name {
+  font-size: 20px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+}
+
+.trade-display-symbol {
+  font-size: 16px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-top: 2px;
+}
+
+.trade-display-price {
+  margin-left: auto;
+  font-size: 28px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+}
+
+.trade-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trade-label {
+  font-size: 18px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+.trade-input {
+  font-size: 24px;
+}
+
+.trade-total-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+}
+
+.trade-total-label {
+  font-size: 20px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+.trade-total-value {
+  font-size: 32px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+}
+
+.trade-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.trade-btn-buy,
+.trade-btn-sell {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.trade-btn-buy:disabled,
+.trade-btn-sell:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

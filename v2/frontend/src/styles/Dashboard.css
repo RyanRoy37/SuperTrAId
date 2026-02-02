@@ -1,0 +1,139 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 36px;
+  color: #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  from { text-shadow: 0 0 15px rgba(0, 255, 0, 0.7); }
+  to { text-shadow: 0 0 25px rgba(0, 255, 0, 0.9); }
+}
+
+.title-icon {
+  font-size: 32px;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.dashboard-subtitle {
+  font-size: 20px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-left: 47px;
+}
+
+.summary-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.section-card {
+  background: rgba(10, 14, 39, 0.95);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.timeframe-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.timeframe-btn {
+  background: transparent;
+  border: 2px solid #00cccc;
+  color: #00cccc;
+  padding: 8px 15px;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.timeframe-btn:hover {
+  border-color: #00ff00;
+  color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.timeframe-btn.active {
+  background: #00ff00;
+  color: #0a0e27;
+  border-color: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+}
+
+.bundles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.dashboard-col {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 24px;
+  }
+
+  .summary-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .timeframe-selector {
+    flex-wrap: wrap;
+  }
+
+  .bundles-grid {
+    grid-template-columns: 1fr;
+  }
+}

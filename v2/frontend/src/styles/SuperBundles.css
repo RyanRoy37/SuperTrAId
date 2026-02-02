@@ -1,0 +1,141 @@
+.superbundles-container {
+  padding: 20px;
+}
+
+.superbundles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.superbundles-subtitle {
+  font-size: 20px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-left: 47px;
+  margin-top: 5px;
+}
+
+.bundles-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+  background: rgba(10, 14, 39, 0.95);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.bundle-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-icon {
+  font-size: 48px;
+}
+
+.stat-value {
+  font-size: 36px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-top: 5px;
+}
+
+.bundles-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid #00cccc;
+  color: #00cccc;
+  padding: 12px 24px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+}
+
+.filter-btn:hover {
+  border-color: #00ff00;
+  color: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: #00ff00;
+  color: #0a0e27;
+  border-color: #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+}
+
+.bundles-grid-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.no-bundles-message {
+  grid-column: 1 / -1;
+  background: rgba(10, 14, 39, 0.95);
+  padding: 60px 40px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.no-bundles-icon {
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.no-bundles-text {
+  font-size: 24px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+@media (max-width: 768px) {
+  .superbundles-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .superbundles-header button {
+    width: 100%;
+  }
+
+  .bundles-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .bundles-filters {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+  .bundles-grid-large {
+    grid-template-columns: 1fr;
+  }
+}

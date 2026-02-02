@@ -1,0 +1,133 @@
+/* ===== SuperTrade Global Page Theme ===== */
+/* Retro • High-Contrast • FinTech • Typewriter */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap');
+
+:root {
+  --bg-main: #050607;
+  --bg-card: #0b0e11;
+  --border-main: #1f2933;
+
+  --green: #00ff88;
+  --green-dim: #00cc6a;
+  --cyan: #00e5ff;
+  --red: #ff4d4d;
+
+  --text-main: #e6f1ff;
+  --text-muted: #8aa1b1;
+}
+
+/* ===== Base ===== */
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Page Layout ===== */
+.page-container {
+  padding: 24px;
+}
+
+/* ===== Page Title ===== */
+.page-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 26px;
+  color: var(--green);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+}
+
+/* ===== Cards ===== */
+.section-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-main);
+  padding: 18px;
+  margin-bottom: 28px;
+  box-shadow: inset 0 0 0 1px rgba(0, 255, 136, 0.05);
+}
+
+/* ===== Forms ===== */
+input,
+select,
+button {
+  font-family: 'VT323', monospace;
+  background: #0e1216;
+  color: var(--text-main);
+  border: 1px solid var(--cyan);
+  padding: 10px 14px;
+  margin: 8px 0;
+  font-size: 18px;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--text-muted);
+}
+
+input:focus,
+select:focus {
+  border-color: var(--green);
+}
+
+/* ===== Buttons ===== */
+button {
+  background: var(--green);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: var(--green);
+}
+
+button:hover {
+  background: var(--green-dim);
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0e1216;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--border-main);
+  padding: 10px 8px;
+  text-align: left;
+}
+
+th {
+  color: var(--cyan);
+  font-weight: normal;
+}
+
+tr:hover {
+  background: rgba(0, 255, 136, 0.05);
+}
+
+/* ===== P&L ===== */
+.profit {
+  color: var(--green);
+}
+
+.loss {
+  color: var(--red);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 20px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+}

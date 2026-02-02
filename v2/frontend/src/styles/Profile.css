@@ -1,0 +1,146 @@
+.profile-container {
+  padding: 20px;
+}
+
+.profile-header {
+  margin-bottom: 30px;
+}
+
+.profile-subtitle {
+  font-size: 20px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-left: 47px;
+  margin-top: 5px;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+  background: rgba(10, 14, 39, 0.95);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.profile-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-stat-icon {
+  font-size: 48px;
+}
+
+.profile-stat-value {
+  font-size: 28px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+}
+
+.profile-stat-label {
+  font-size: 16px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-top: 5px;
+}
+
+.profile-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-section {
+  background: rgba(10, 14, 39, 0.95);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #00ff00;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.profile-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-label {
+  font-size: 18px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  letter-spacing: 1px;
+}
+
+.profile-value {
+  font-size: 22px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  padding: 12px;
+  background: rgba(0, 255, 0, 0.05);
+  border: 2px solid rgba(0, 255, 0, 0.3);
+  border-radius: 4px;
+}
+
+.profile-note {
+  font-size: 14px;
+  color: #ffff00;
+  font-family: 'VT323', monospace;
+  font-style: italic;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .profile-actions button {
+    width: 100%;
+  }
+}

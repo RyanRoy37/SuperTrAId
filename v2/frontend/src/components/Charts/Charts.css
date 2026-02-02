@@ -1,0 +1,20 @@
+.chart-container {
+  height: 350px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.pie-chart {
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 250px;
+  }
+  
+  .pie-chart {
+    height: 200px;
+  }
+}

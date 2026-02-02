@@ -1,0 +1,453 @@
+/* Summary Cards */
+.summary-card {
+  background: rgba(10, 14, 39, 0.95);
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  letter-spacing: 1px;
+}
+
+.card-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.card-subtitle {
+  font-size: 16px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+/* Holdings Table */
+.holdings-table-container {
+  background: rgba(10, 14, 39, 0.95);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header {
+  background: rgba(0, 255, 0, 0.1);
+  padding: 15px 20px;
+  border-bottom: 2px solid #00ff00;
+}
+
+.table-header h2 {
+  font-size: 24px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.holdings-table {
+  overflow-x: auto;
+}
+
+.holdings-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.holdings-table th {
+  background: rgba(0, 255, 0, 0.15);
+  color: #00ff00;
+  padding: 15px 10px;
+  text-align: left;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #00ff00;
+}
+
+.holdings-table td {
+  padding: 15px 10px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.holdings-table tbody tr {
+  transition: all 0.3s;
+}
+
+.holdings-table tbody tr:hover {
+  background: rgba(0, 255, 0, 0.05);
+}
+
+.stock-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stock-logo {
+  font-size: 28px;
+}
+
+.stock-name {
+  color: #00ff00;
+  font-size: 18px;
+}
+
+.stock-symbol {
+  color: #00cccc;
+  font-size: 14px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-action {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: 'VT323', monospace;
+  border: 2px solid;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-buy {
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
+.btn-buy:hover {
+  background: #00ff00;
+  color: #0a0e27;
+}
+
+.btn-sell {
+  border-color: #ff6666;
+  color: #ff6666;
+}
+
+.btn-sell:hover {
+  background: #ff6666;
+  color: #0a0e27;
+}
+
+.btn-view {
+  border-color: #00cccc;
+  color: #00cccc;
+}
+
+.btn-view:hover {
+  background: #00cccc;
+  color: #0a0e27;
+}
+
+/* Wishlist */
+.wishlist-container {
+  background: rgba(10, 14, 39, 0.95);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.wishlist-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 204, 204, 0.4);
+}
+
+.wishlist-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.wishlist-logo {
+  font-size: 40px;
+}
+
+.wishlist-name {
+  font-size: 18px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+}
+
+.wishlist-symbol {
+  font-size: 14px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+.wishlist-price {
+  font-size: 32px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin-bottom: 10px;
+}
+
+.wishlist-change {
+  font-size: 20px;
+  font-family: 'VT323', monospace;
+  margin-bottom: 15px;
+}
+
+.wishlist-notes {
+  font-size: 16px;
+  color: #ffff00;
+  font-family: 'VT323', monospace;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.wishlist-actions .btn-secondary {
+  flex: 1;
+}
+
+.btn-remove {
+  background: transparent;
+  border: 2px solid #ff0000;
+  color: #ff0000;
+  font-size: 24px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-family: 'VT323', monospace;
+  transition: all 0.3s;
+}
+
+.btn-remove:hover {
+  background: #ff0000;
+  color: #0a0e27;
+}
+
+/* Activity Feed */
+.activity-feed-container {
+  background: rgba(10, 14, 39, 0.95);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.feed-header {
+  background: rgba(0, 255, 0, 0.1);
+  padding: 15px 20px;
+  border-bottom: 2px solid #00ff00;
+}
+
+.feed-header h3 {
+  font-size: 20px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.activity-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.activity-item:hover {
+  background: rgba(0, 255, 0, 0.05);
+}
+
+.activity-icon {
+  font-size: 28px;
+  min-width: 35px;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-message {
+  font-size: 18px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  margin-bottom: 5px;
+}
+
+.activity-time {
+  font-size: 14px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+/* Super Bundle Card */
+.bundle-card {
+  background: rgba(10, 14, 39, 0.95);
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.bundle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+
+.bundle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bundle-title {
+  font-size: 24px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+}
+
+.bundle-badge {
+  font-size: 14px;
+  color: #ffff00;
+  font-family: 'VT323', monospace;
+  padding: 4px 8px;
+  border: 1px solid #ffff00;
+  border-radius: 4px;
+}
+
+.bundle-description {
+  font-size: 16px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+  margin-bottom: 15px;
+}
+
+.bundle-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.bundle-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #00cccc;
+  font-family: 'VT323', monospace;
+}
+
+.stat-value {
+  font-size: 20px;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+}
+
+.bundle-stocks-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.stock-chip {
+  background: rgba(0, 255, 0, 0.2);
+  color: #00ff00;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'VT323', monospace;
+  border: 1px solid #00ff00;
+}
+
+.bundle-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.bundle-actions .btn-primary,
+.bundle-actions .btn-secondary,
+.bundle-actions .btn-edit {
+  width: 100%;
+}
+
+.btn-edit {
+  background: transparent;
+  border: 2px solid #ffff00;
+  color: #ffff00;
+  padding: 8px 16px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-edit:hover {
+  background: #ffff00;
+  color: #0a0e27;
+}
+
+@media (max-width: 768px) {
+  .holdings-table {
+    font-size: 14px;
+  }
+
+  .wishlist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bundle-stats {
+    grid-template-columns: 1fr;
+  }
+}
