@@ -1,2 +1,4 @@
-backend/node/.env
 supertraid_env/
+v3/backend/.env
+v2/backend/.env
+v1/backend/.env

@@ -1,13 +1,14 @@
 <div align="center">
 
-  <img src="assets/SuperTrAId LOGO.png" alt="SuperTraid Logo" width="180"/>
+  <img src="assets/SuperTrade LOGO.png" alt="SuperTrade Logo" width="180"/>
   
-  <h1>SuperTrAId</h1>
-  <h3>AI-Driven Algorithmic Trading and Statistical Arbitrage Platform</h3>
+  <h1>SuperTrade</h1>
+  <h3>Virtual Trading & Market Simulation Platform</h3>
 
   <p>
-    <strong>Smart · Predictive · Data-Driven</strong><br>
-    Combining <b>Machine Learning</b> and <b>Statistical Arbitrage</b> for intelligent trading decisions.
+    <strong>Learn · Simulate · Improve</strong><br>
+    A <b>beginner-focused virtual trading platform</b> designed to help users test strategies,
+    understand market behavior, and build confidence using <b>virtual capital</b>.
   </p>
 
   <img src="assets/stonks-up-stongs.gif" width="600px" alt="Dashboard Preview"/>
@@ -21,33 +22,50 @@
 <h2>Introduction</h2>
 
 <p align="justify">
-  Financial markets generate massive amounts of data every second, making it increasingly difficult for traders to identify profitable opportunities manually.
-  Traditional trading strategies often rely on fixed rules or human intuition, both of which fail to adapt quickly to changing market dynamics.
+  Entering financial markets can be intimidating for beginners.  
+  Real trading involves capital risk, emotional pressure, and complex market dynamics that are difficult to grasp without hands-on experience.
   <br><br>
-  The need for intelligent, automated systems that can learn from patterns, adapt to volatility, and make statistically sound trading decisions has never been greater.
+  Many aspiring traders either jump into live markets too early or rely solely on theory, both of which limit learning.
+  <br><br>
+  <b>SuperTrade</b> was created to solve this problem by offering a safe, structured, and realistic virtual trading environment where beginners can practice, experiment, and learn — without risking real money.
 </p>
 
 <br>
 
-<h2>💡 Our Solution</h2>
+<h2>💡 Our Vision</h2>
 
 <p align="justify">
-  <b>SuperTraid</b> is an <b>AI-driven algorithmic trading platform</b> that fuses 
-  <b>statistical arbitrage</b> techniques with <b>machine learning</b> predictions to build smart trading strategies. 
-  It helps users discover, backtest, and simulate profitable opportunities using real market data — all through an intuitive dashboard.
+  <b>SuperTrade</b> is a <b>virtual trading and market simulation platform</b> built specifically for beginners to test their trading skills using <b>virtual capital</b>.
+  <br><br>
+  The platform enables users to:
+  <ul>
+    <li>Practice trading without financial risk</li>
+    <li>Understand how profits, losses, and drawdowns occur</li>
+    <li>Analyze market movements through historical data</li>
+    <li>Build discipline before entering real markets</li>
+  </ul>
 </p>
 
 <div align="center">
-  <img src="assets/dashboard.webp" width="700" alt="Architecture Diagram"/>
+  <img src="assets/dashboard.webp" width="700" alt="Platform Overview"/>
 </div>
 
 <p align="justify">
-  Our platform focuses on:
+  Every trade executed on SuperTrade follows realistic market rules — including capital limits, position sizing, and historical price behavior — ensuring that learning outcomes closely resemble real-world trading scenarios.
+</p>
+
+<br>
+
+<h2>🔍 What Makes SuperTrade Unique</h2>
+
+<p align="justify">
+  Unlike traditional demo accounts or paper trading tools, SuperTrade emphasizes <b>learning through structure and analysis</b>.
   <ul>
-    <li>📊 <b>Statistical Arbitrage</b> – finding cointegrated stock pairs and trading based on mean reversion.</li>
-    <li>🧠 <b>Machine Learning</b> – predicting next-day price trends and volatility patterns.</li>
-    <li>⚙️ <b>Unified Backtesting Engine</b> – comparing multiple strategies under realistic market conditions.</li>
-    <li>📈 <b>Visual Dashboard</b> – clear performance insights through real-time charts and analytics.</li>
+    <li>📊 <b>Virtual Capital Allocation</b> – Users start with a fixed amount of simulated capital to prevent unrealistic trading behavior.</li>
+    <li>📉 <b>Statistical Market Insights</b> – Price movements, trends, and spreads are analyzed to help users understand market dynamics.</li>
+    <li>🧪 <b>Strategy Testing</b> – Users can test different approaches and observe their long-term performance.</li>
+    <li>📈 <b>Performance Tracking</b> – Detailed insights into returns, losses, and portfolio growth.</li>
+    <li>🧠 <b>Educational Focus</b> – Clear visibility into why trades succeed or fail.</li>
   </ul>
 </p>
 
@@ -58,42 +76,42 @@
 <table align="center">
   <tr>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60" height="60"/><br>React
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60"/><br>React
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="60" height="60"/><br>Node.js
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="60"/><br>Node.js
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="60" height="60"/><br>Express
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="60"/><br>Express
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="60" height="60"/><br>MongoDB
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="60"/><br>MongoDB
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="60" height="60"/><br>PostgreSQL
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="60"/><br>PostgreSQL
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="60" height="60"/><br>Python
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="60"/><br>Python
     </td>
   </tr>
   <tr>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" height="60"/><br>JavaScript
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60"/><br>JavaScript
     </td>
     <td align="center" width="120">
-      <img src="https://www.chartjs.org/media/logo-title.svg" width="80" height="60"/><br>Chart.js
+      <img src="https://www.chartjs.org/media/logo-title.svg" width="80"/><br>Chart.js
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="60" height="60"/><br>Git
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="60"/><br>Git
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="60" height="60"/><br>Docker
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="60"/><br>Docker
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="60" height="60"/><br>FastAPI
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="60"/><br>FastAPI
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60" height="60"/><br>HTML5
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60"/><br>HTML5
     </td>
   </tr>
 </table>
@@ -105,13 +123,13 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge&logo=github" alt="Development Badge"/>
   <br><br>
-  <p><i>SuperTraid is currently under active development — stay tuned for upcoming modules and live deployment.</i></p>
+  <p><i>SuperTrade is under active development with ongoing improvements to trading logic, analytics, and user experience.</i></p>
 </div>
 
 <br><br>
 
 <p align="center">
-  <i>Meet the developers behind SuperTraid.</i>
+  <i>Meet the developers behind SuperTrade.</i>
 </p>
 
 <!-- TEAM GRID -->
@@ -122,10 +140,7 @@
     <h3 style="margin-bottom: 5px;">Kajal Vivek Singh Chauhan</h3>
     <a href="https://github.com/Kajallchauhan" target="_blank">
       <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">💻 @Kajallchauhan</p>
-      <img src="assets/Shinobu.webp" 
-           width="180" height="180" 
-           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
-           alt="Kajal Vivek Singh Chauhan"/>
+      <img src="assets/Shinobu.webp" width="180" height="180" style="border-radius:50%; border:3px solid #bbb;"/>
     </a>
   </div>
 
@@ -134,10 +149,7 @@
     <h3 style="margin-bottom: 5px;">Jeevan C</h3>
     <a href="https://github.com/JeevanC37" target="_blank">
       <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">🧱 @JeevanC37</p>
-      <img src="assets/bob.jpg" 
-           width="180" height="180" 
-           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
-           alt="Jeevan C"/>
+      <img src="assets/bob.jpg" width="180" height="180" style="border-radius:50%; border:3px solid #bbb;"/>
     </a>
   </div>
 
@@ -146,10 +158,7 @@
     <h3 style="margin-bottom: 5px;">Jatin Saraogi</h3>
     <a href="https://github.com/JatinS0241" target="_blank">
       <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">💪 @JatinS0241</p>
-      <img src="assets/hulk.jpg" 
-           width="180" height="180" 
-           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
-           alt="Jatin Saraogi"/>
+      <img src="assets/hulk.jpg" width="180" height="180" style="border-radius:50%; border:3px solid #bbb;"/>
     </a>
   </div>
 
@@ -158,10 +167,7 @@
     <h3 style="margin-bottom: 5px;">Ryan Roy</h3>
     <a href="https://github.com/RyanRoy37" target="_blank">
       <p style="margin-top:0; margin-bottom:10px; font-size:15px; color:gray;">⚡ @RyanRoy37</p>
-      <img src="assets/Minion.webp" 
-           width="180" height="180" 
-           style="border-radius:50%; margin-top:10px; border:3px solid #bbb;" 
-           alt="Ryan Roy"/>
+      <img src="assets/Minion.webp" width="180" height="180" style="border-radius:50%; border:3px solid #bbb;"/>
     </a>
   </div>
 
